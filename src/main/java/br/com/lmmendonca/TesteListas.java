@@ -1,6 +1,7 @@
 package br.com.lmmendonca;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TesteListas {
@@ -17,7 +18,15 @@ public class TesteListas {
         aulas.add(aula2);
         aulas.add(aula3);
 
+        Collections.shuffle(aulas);
 
+        aulas.forEach(System.out::println);
+
+        System.out.println("--------------------------");
+
+        Collections.sort(aulas);
+
+        aulas.forEach(System.out::println);
 
 
     }
