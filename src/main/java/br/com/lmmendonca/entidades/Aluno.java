@@ -32,7 +32,7 @@ public class Aluno {
 
     @Override
     public String toString() {
-        return "[ALUNO: " + this.nome + ", MATRICLA: " + this.matricula + "]";
+        return "[ALUNO: " + this.nome + ", MATRICULA: " + this.matricula + "]";
     }
 
 

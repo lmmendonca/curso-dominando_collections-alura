@@ -1,17 +1,22 @@
 package br.com.lmmendonca.entidades;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class Curso {
 
-    private String     nome;
-    private String     instrutor;
-    private List<Aula> aulas;
-    private Set<Aluno> alunos = new HashSet<>();
+    private String              nome;
+    private String              instrutor;
+    private List<Aula>          aulas;
+    private Set<Aluno>          alunos             = new HashSet<>();
+    //Mapa, para todo aluno deve existir um integer para representalo;
+    private Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();
 
     public Curso(String nome, String instrutor) {
         this.nome = nome;
@@ -56,6 +61,7 @@ public class Curso {
 
     public void matricula(Aluno aluno) {
         this.alunos.add(aluno);
+        this.matriculaParaAluno.put(aluno.getMatricula(), aluno);
     }
 
     public Set<Aluno> getAlunos() {
@@ -64,5 +70,11 @@ public class Curso {
 
     public boolean estaMatriculado(Aluno aluno) {
         return this.alunos.contains(aluno);
+    }
+
+    public Aluno buscaMatriculado(Integer matricula) {
+        if (!matriculaParaAluno.containsKey(matricula))
+            throw new NoSuchElementException("A matricula " + matricula + " não foi encontrada.");
+        return matriculaParaAluno.get(matricula);
     }
 }
