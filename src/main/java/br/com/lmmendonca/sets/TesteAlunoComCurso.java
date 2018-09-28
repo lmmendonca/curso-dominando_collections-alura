@@ -1,4 +1,8 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.sets;
+
+import br.com.lmmendonca.entidades.Aluno;
+import br.com.lmmendonca.entidades.Aula;
+import br.com.lmmendonca.entidades.Curso;
 
 public class TesteAlunoComCurso {
 

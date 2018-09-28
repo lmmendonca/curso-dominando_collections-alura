@@ -1,4 +1,4 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.sets;
 
 import java.util.Collections;
 import java.util.Set;

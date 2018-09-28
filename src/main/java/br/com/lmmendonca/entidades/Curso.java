@@ -1,4 +1,4 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.entidades;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -54,7 +54,7 @@ public class Curso {
 
     }
 
-    public void matricula(Aluno aluno){
+    public void matricula(Aluno aluno) {
         this.alunos.add(aluno);
     }
 
@@ -62,7 +62,7 @@ public class Curso {
         return Collections.unmodifiableSet(alunos);
     }
 
-    public boolean estaMatriculado(Aluno aluno){
+    public boolean estaMatriculado(Aluno aluno) {
         return this.alunos.contains(aluno);
     }
 }

@@ -1,4 +1,4 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.entidades;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -15,7 +15,9 @@ public class Aluno {
 
 
     public Aluno(String nome, Integer matricula) {
-        if (nome == null) throw new NullPointerException();
+        if (nome == null) {
+            throw new NullPointerException();
+        }
         this.nome = nome;
         this.matricula = matricula;
     }

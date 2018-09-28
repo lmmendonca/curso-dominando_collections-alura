@@ -1,7 +1,8 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.listas;
+
+import br.com.lmmendonca.entidades.Aula;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 

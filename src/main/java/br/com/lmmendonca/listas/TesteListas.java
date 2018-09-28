@@ -1,4 +1,4 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.listas;
 
 import java.util.ArrayList;
 import java.util.Collections;

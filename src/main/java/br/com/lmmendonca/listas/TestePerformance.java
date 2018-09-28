@@ -1,9 +1,7 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.listas;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class TestePerformance {
 
@@ -15,7 +13,9 @@ public class TestePerformance {
 
 //        Set<Integer> list = new HashSet<>();
 
-        for(int i = 0; i< 50000; i++) list.add(i);
+        for (int i = 0; i < 50000; i++) {
+            list.add(i);
+        }
 
         System.out.println(System.currentTimeMillis() - init);
 

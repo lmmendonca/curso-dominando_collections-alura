@@ -1,4 +1,7 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.listas;
+
+import br.com.lmmendonca.entidades.Aula;
+import br.com.lmmendonca.entidades.Curso;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package br.com.lmmendonca;
+package br.com.lmmendonca.entidades;
 
 
 public class Aula implements Comparable<Aula> {
